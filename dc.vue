@@ -445,16 +445,13 @@ export default {
     ...mapGetters("myusers", ["myusers","loggeduser"]), 
   //  ...mapGetters("mysettings", ['mysettings','getDashGroupName']), 
     ...mapGetters("mygroups", ['mygroups','getGroupIdForName']), 
-    tablabel (){
-      /** @returns { string } */
+    tablabel (){ 
       return "1."+this.crqtype+" Bank "   
     },
-    arrayUsers() { 
-      /** @returns { Object } */
+    arrayUsers() {  
         return Object.values(this.myusers) 
     },
-    formatMyDate(str){
-      /** @returns { string } */
+    formatMyDate(str){ 
       return date.formatDate(str,'DD-MM-YYYY')
     }    
   },  
